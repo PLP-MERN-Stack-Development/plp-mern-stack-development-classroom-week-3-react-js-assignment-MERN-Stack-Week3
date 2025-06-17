@@ -1,70 +1,98 @@
-# React.js and Tailwind CSS Assignment
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
 
-## Assignment Overview
+---
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+```md
+# 📝 Task Manager App
 
-## Getting Started
+A responsive task manager built with **React**, **Vite**, and **Tailwind CSS**, demonstrating:
+- Component architecture
+- State management with React Hooks
+- Context API for theme toggling
+- Local storage persistence
+- API integration with JSONPlaceholder
+- Toast notifications and clean UI
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+---
 
-## Files Included
+## 🚀 Features
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+- ✅ Add, complete, and delete tasks
+- ✅ Filter tasks (All, Active, Completed)
+- ✅ Light/Dark theme toggle
+- ✅ Data fetching from public API
+- ✅ Toast notifications with auto-dismiss
+- ✅ Fully responsive layout using Tailwind CSS
 
-## Requirements
+---
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
-
-## Project Structure
+## 📁 Project Structure
 
 ```
+
 src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+├── components/        # Reusable UI components (Navbar, Button, Card, Footer)
+├── context/           # Theme + Toast contexts
+├── hooks/             # Custom React hooks (useLocalStorage)
+├── layout/            # Layout wrapper with Navbar + Footer
+├── pages/             # App pages (Home, Tasks, API)
+├── App.jsx            # Root application
+├── main.jsx           # App entry with providers
+├── index.css          # TailwindCSS + global styles
+
+````
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone & Install
+
+```bash
+git clone https://github.com/your-username/my-project.git
+cd task-manager-app
+npm install
+````
+
+### 2. Run Dev Server
+
+```bash
+npm run dev
 ```
 
-## Submission
+### 3. Build for Production
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+```bash
+npm run build
+```
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+---
 
-## Resources
+## 🧪 Technologies
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+* [React](https://react.dev/)
+* [Vite](https://vitejs.dev/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [React Router DOM](https://reactrouter.com/)
+* [JSONPlaceholder API](https://jsonplaceholder.typicode.com/)
+
+---
+
+## 🌗 Theme Switching
+
+Toggle between **Light** and **Dark** modes using the navbar switcher.
+Theme is managed using React Context and Tailwind's `darkMode: 'class'` strategy.
+
+---
+
+## 📦 API Integration
+
+Fetch posts from JSONPlaceholder at `/api` route with:
+
+* Search input filter
+* Grid layout
+* Loading/error states
+
+
+## 📸 Screenshots
+
